@@ -1,0 +1,79 @@
+﻿@model Capa_Entidad.Articulo
+
+@{
+    ViewBag.Title = "AgregarArticulo";
+}
+
+<h2 class="text-center mb-4 text-primary">🛍️ Agregar Artículo al Carrito</h2>
+
+<div class="row justify-content-center">
+    <div class="col-md-10 col-lg-8">
+        <div class="card shadow-lg border-0 mb-4">
+            <div class="card-header bg-primary bg-gradient text-white">
+                <h5 class="mb-0"><i class="bi bi-box-seam"></i> Detalles del Artículo</h5>
+            </div>
+            <div class="card-body">
+                <dl class="row">
+                    <dt class="col-sm-4 text-muted">@Html.DisplayNameFor(model => model.cod_art)</dt>
+                    <dd class="col-sm-8 fw-semibold text-dark">@Html.DisplayFor(model => model.cod_art)</dd>
+
+                    <dt class="col-sm-4 text-muted">@Html.DisplayNameFor(model => model.nom_art)</dt>
+                    <dd class="col-sm-8 fw-semibold text-dark">@Html.DisplayFor(model => model.nom_art)</dd>
+
+                    <dt class="col-sm-4 text-muted">@Html.DisplayNameFor(model => model.uni_med)</dt>
+                    <dd class="col-sm-8 text-dark">@Html.DisplayFor(model => model.uni_med)</dd>
+
+                    <dt class="col-sm-4 text-muted">@Html.DisplayNameFor(model => model.pre_art)</dt>
+                    <dd class="col-sm-8 text-success fw-bold">
+                        S/. @Html.DisplayFor(model => model.pre_art)
+                    </dd>
+
+                    <dt class="col-sm-4 text-muted">@Html.DisplayNameFor(model => model.stk_art)</dt>
+                    <dd class="col-sm-8">
+                        <span class="badge bg-info text-dark">
+                            @Html.DisplayFor(model => model.stk_art) disponibles
+                        </span>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+
+        <div class="card shadow-sm border-0">
+            <div class="card-header bg-light border-bottom">
+                <h6 class="mb-0 text-secondary"><i class="bi bi-plus-circle"></i> Ingresar Cantidad</h6>
+            </div>
+            <div class="card-body">
+                @using (Html.BeginForm())
+                {
+                    @Html.AntiForgeryToken()
+
+                    <div class="mb-3">
+                        <label for="cantidad" class="form-label fw-bold text-secondary">Cantidad a agregar:</label>
+                        @Html.TextBox("cantidad", "1", new
+                        {
+                            @class = "form-control w-25",
+                            @type = "number",
+                            @min = "1",
+                            @id = "cantidad"
+                        })
+                    </div>
+
+                    <div class="d-flex flex-wrap gap-3 mt-3">
+                        <input type="submit" value="🛒 Agregar al Carrito" class="btn btn-outline-danger px-4" />
+                        @Html.ActionLink("⬅️ Seguir Comprando", "IndexArticulos", null, new { @class = "btn btn-warning text-white px-4" })
+                        @Html.ActionLink("🧺 Ver Carrito", "VerCarrito", null, new { @class = "btn btn-success px-4" })
+                    </div>
+                }
+            </div>
+        </div>
+
+        @if (ViewBag.mensaje != null)
+        {
+            <div class="alert alert-warning mt-4 text-center shadow-sm fw-bold">
+                @ViewBag.mensaje
+            </div>
+        }
+    </div>
+</div>
+
+

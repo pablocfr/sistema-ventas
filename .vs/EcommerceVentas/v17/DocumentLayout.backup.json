@@ -1,0 +1,134 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\User\\Documents\\4TO CICLO\\POO 2\\PROYECTOS\\EcommerceVentas\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CFB6D9D5-E754-4B2E-A7E4-C5476D3C8AFE}|ProyEcommerceVentas\\ProyEcommerceVentas.csproj|C:\\Users\\User\\Documents\\4TO CICLO\\POO 2\\PROYECTOS\\EcommerceVentas\\proyecommerceventas\\views\\ventas\\indexarticulos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CFB6D9D5-E754-4B2E-A7E4-C5476D3C8AFE}|ProyEcommerceVentas\\ProyEcommerceVentas.csproj|solutionrelative:proyecommerceventas\\views\\ventas\\indexarticulos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CFB6D9D5-E754-4B2E-A7E4-C5476D3C8AFE}|ProyEcommerceVentas\\ProyEcommerceVentas.csproj|c:\\users\\user\\documents\\4to ciclo\\poo 2\\proyectos\\ecommerceventas\\proyecommerceventas\\controllers\\ventascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CFB6D9D5-E754-4B2E-A7E4-C5476D3C8AFE}|ProyEcommerceVentas\\ProyEcommerceVentas.csproj|solutionrelative:proyecommerceventas\\controllers\\ventascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CFB6D9D5-E754-4B2E-A7E4-C5476D3C8AFE}|ProyEcommerceVentas\\ProyEcommerceVentas.csproj|C:\\Users\\User\\Documents\\4TO CICLO\\POO 2\\PROYECTOS\\EcommerceVentas\\proyecommerceventas\\views\\ventas\\listardetalleventa.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CFB6D9D5-E754-4B2E-A7E4-C5476D3C8AFE}|ProyEcommerceVentas\\ProyEcommerceVentas.csproj|solutionrelative:proyecommerceventas\\views\\ventas\\listardetalleventa.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3741235B-0C37-403C-A8B7-B1D293584B12}|Capa_Entidad\\Capa_Entidad.csproj|C:\\Users\\User\\Documents\\4TO CICLO\\POO 2\\PROYECTOS\\EcommerceVentas\\capa_entidad\\detalle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3741235B-0C37-403C-A8B7-B1D293584B12}|Capa_Entidad\\Capa_Entidad.csproj|solutionrelative:capa_entidad\\detalle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46517B02-B449-485B-8E5E-08539D5AA3F4}|Capa_Datos\\Capa_Datos.csproj|C:\\Users\\User\\Documents\\4TO CICLO\\POO 2\\PROYECTOS\\EcommerceVentas\\capa_datos\\ventasdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46517B02-B449-485B-8E5E-08539D5AA3F4}|Capa_Datos\\Capa_Datos.csproj|solutionrelative:capa_datos\\ventasdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CFB6D9D5-E754-4B2E-A7E4-C5476D3C8AFE}|ProyEcommerceVentas\\ProyEcommerceVentas.csproj|C:\\Users\\User\\Documents\\4TO CICLO\\POO 2\\PROYECTOS\\EcommerceVentas\\proyecommerceventas\\views\\ventas\\vercarrito.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CFB6D9D5-E754-4B2E-A7E4-C5476D3C8AFE}|ProyEcommerceVentas\\ProyEcommerceVentas.csproj|solutionrelative:proyecommerceventas\\views\\ventas\\vercarrito.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CFB6D9D5-E754-4B2E-A7E4-C5476D3C8AFE}|ProyEcommerceVentas\\ProyEcommerceVentas.csproj|C:\\Users\\User\\Documents\\4TO CICLO\\POO 2\\PROYECTOS\\EcommerceVentas\\proyecommerceventas\\views\\ventas\\pagarcarrito.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CFB6D9D5-E754-4B2E-A7E4-C5476D3C8AFE}|ProyEcommerceVentas\\ProyEcommerceVentas.csproj|solutionrelative:proyecommerceventas\\views\\ventas\\pagarcarrito.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ListarDetalleVenta.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\4TO CICLO\\POO 2\\PROYECTOS\\EcommerceVentas\\ProyEcommerceVentas\\Views\\Ventas\\ListarDetalleVenta.cshtml",
+              "RelativeDocumentMoniker": "ProyEcommerceVentas\\Views\\Ventas\\ListarDetalleVenta.cshtml",
+              "ToolTip": "C:\\Users\\User\\Documents\\4TO CICLO\\POO 2\\PROYECTOS\\EcommerceVentas\\ProyEcommerceVentas\\Views\\Ventas\\ListarDetalleVenta.cshtml",
+              "RelativeToolTip": "ProyEcommerceVentas\\Views\\Ventas\\ListarDetalleVenta.cshtml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAACoAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-09T03:06:16.333Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Detalle.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\4TO CICLO\\POO 2\\PROYECTOS\\EcommerceVentas\\Capa_Entidad\\Detalle.cs",
+              "RelativeDocumentMoniker": "Capa_Entidad\\Detalle.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\4TO CICLO\\POO 2\\PROYECTOS\\EcommerceVentas\\Capa_Entidad\\Detalle.cs",
+              "RelativeToolTip": "Capa_Entidad\\Detalle.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-09T03:03:47.328Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "VentasDAO.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\4TO CICLO\\POO 2\\PROYECTOS\\EcommerceVentas\\Capa_Datos\\VentasDAO.cs",
+              "RelativeDocumentMoniker": "Capa_Datos\\VentasDAO.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\4TO CICLO\\POO 2\\PROYECTOS\\EcommerceVentas\\Capa_Datos\\VentasDAO.cs",
+              "RelativeToolTip": "Capa_Datos\\VentasDAO.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAwwEYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T20:17:54.908Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PagarCarrito.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\4TO CICLO\\POO 2\\PROYECTOS\\EcommerceVentas\\ProyEcommerceVentas\\Views\\Ventas\\PagarCarrito.cshtml",
+              "RelativeDocumentMoniker": "ProyEcommerceVentas\\Views\\Ventas\\PagarCarrito.cshtml",
+              "ToolTip": "C:\\Users\\User\\Documents\\4TO CICLO\\POO 2\\PROYECTOS\\EcommerceVentas\\ProyEcommerceVentas\\Views\\Ventas\\PagarCarrito.cshtml",
+              "RelativeToolTip": "ProyEcommerceVentas\\Views\\Ventas\\PagarCarrito.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-05T05:46:14.43Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "VentasController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\4TO CICLO\\POO 2\\PROYECTOS\\EcommerceVentas\\ProyEcommerceVentas\\Controllers\\VentasController.cs",
+              "RelativeDocumentMoniker": "ProyEcommerceVentas\\Controllers\\VentasController.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\4TO CICLO\\POO 2\\PROYECTOS\\EcommerceVentas\\ProyEcommerceVentas\\Controllers\\VentasController.cs",
+              "RelativeToolTip": "ProyEcommerceVentas\\Controllers\\VentasController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJ8AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T03:50:35.457Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "VerCarrito.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\4TO CICLO\\POO 2\\PROYECTOS\\EcommerceVentas\\ProyEcommerceVentas\\Views\\Ventas\\VerCarrito.cshtml",
+              "RelativeDocumentMoniker": "ProyEcommerceVentas\\Views\\Ventas\\VerCarrito.cshtml",
+              "ToolTip": "C:\\Users\\User\\Documents\\4TO CICLO\\POO 2\\PROYECTOS\\EcommerceVentas\\ProyEcommerceVentas\\Views\\Ventas\\VerCarrito.cshtml",
+              "RelativeToolTip": "ProyEcommerceVentas\\Views\\Ventas\\VerCarrito.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-05T03:47:30.902Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "IndexArticulos.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\4TO CICLO\\POO 2\\PROYECTOS\\EcommerceVentas\\ProyEcommerceVentas\\Views\\Ventas\\IndexArticulos.cshtml",
+              "RelativeDocumentMoniker": "ProyEcommerceVentas\\Views\\Ventas\\IndexArticulos.cshtml",
+              "ToolTip": "C:\\Users\\User\\Documents\\4TO CICLO\\POO 2\\PROYECTOS\\EcommerceVentas\\ProyEcommerceVentas\\Views\\Ventas\\IndexArticulos.cshtml",
+              "RelativeToolTip": "ProyEcommerceVentas\\Views\\Ventas\\IndexArticulos.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAkAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-05T03:47:15.159Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

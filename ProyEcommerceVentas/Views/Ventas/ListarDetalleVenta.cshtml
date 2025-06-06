@@ -1,0 +1,134 @@
+﻿@model IEnumerable<Capa_Entidad.Detalle>
+
+@{
+    ViewBag.Title = "ListarDetalleVenta";
+}
+
+@{
+    var venta = Model.FirstOrDefault();
+    string numVenta = venta?.num_vta;
+    string cliente = venta?.nom_cli;
+    decimal total = venta?.tot_vta ?? 0;
+}
+
+@Html.ActionLink("⬅️ Seguir Comprando", "IndexArticulos", null, new { @class = "btn btn-success shadow-sm" })
+
+<div class="card-factura">
+    <h2>Resumen de Venta</h2>
+    <div class="info">📌 <strong>Número de Venta: </strong> @numVenta</div>
+    <div class="info">👤 <strong>Cliente: </strong> @cliente</div>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>🛒 Artículo</th>
+                <th>💰 Precio</th>
+                <th>🔢 Cantidad</th>
+                <th>💵 Total por Producto</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.nom_art</td>
+                    <td>S/. @item.pre_art.ToString("N2")</td>
+                    <td>@item.cantidad</td>
+                    <td>S/. @item.total_producto.ToString("N2")</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <div class="total-final">
+        Total General: S/. @total.ToString("N2")
+    </div>
+
+    <div class="clearfix"></div>
+</div>
+
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f0f2f5;
+    }
+
+    .card-factura {
+        background: #ffffff;
+        border-radius: 16px;
+        padding: 30px;
+        margin: 40px auto;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        max-width: 850px;
+        transition: all 0.3s ease;
+    }
+
+        .card-factura:hover {
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+
+        .card-factura h2 {
+            font-size: 26px;
+            color: #2196f3;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 12px;
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+        }
+
+            .card-factura h2::before {
+                content: '🧾';
+                margin-right: 10px;
+            }
+
+        .card-factura .info {
+            font-size: 17px;
+            margin-bottom: 10px;
+            color: #555;
+        }
+
+    .table {
+        margin-top: 20px;
+        background-color: white;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+        .table th, .table td {
+            text-align: left;
+            padding: 14px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .table th {
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        .table tbody tr:hover {
+            background-color: #f9f9f9;
+        }
+
+    .total-final {
+        text-align: right;
+        margin-top: 25px;
+        font-size: 22px;
+        font-weight: bold;
+        color: #1b5e20;
+        background: #e8f5e9;
+        padding: 18px 22px;
+        border-radius: 14px;
+        max-width: 350px;
+        float: right;
+        border-left: 6px solid #4caf50;
+    }
+
+    .info strong {
+        color: #333;
+    }
+
+    .clearfix {
+        clear: both;
+    }
+</style>

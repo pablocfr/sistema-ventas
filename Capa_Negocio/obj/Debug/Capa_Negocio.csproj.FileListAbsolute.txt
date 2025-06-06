@@ -1,0 +1,13 @@
+C:\Users\User\Documents\4TO CICLO\POO 2\PROYECTOS\EcommerceVentas\Capa_Negocio\bin\Debug\Capa_Negocio.dll
+C:\Users\User\Documents\4TO CICLO\POO 2\PROYECTOS\EcommerceVentas\Capa_Negocio\bin\Debug\Capa_Negocio.pdb
+C:\Users\User\Documents\4TO CICLO\POO 2\PROYECTOS\EcommerceVentas\Capa_Negocio\bin\Debug\Capa_Datos.dll
+C:\Users\User\Documents\4TO CICLO\POO 2\PROYECTOS\EcommerceVentas\Capa_Negocio\bin\Debug\Capa_Entidad.dll
+C:\Users\User\Documents\4TO CICLO\POO 2\PROYECTOS\EcommerceVentas\Capa_Negocio\bin\Debug\Newtonsoft.Json.dll
+C:\Users\User\Documents\4TO CICLO\POO 2\PROYECTOS\EcommerceVentas\Capa_Negocio\bin\Debug\Capa_Datos.pdb
+C:\Users\User\Documents\4TO CICLO\POO 2\PROYECTOS\EcommerceVentas\Capa_Negocio\bin\Debug\Capa_Entidad.pdb
+C:\Users\User\Documents\4TO CICLO\POO 2\PROYECTOS\EcommerceVentas\Capa_Negocio\bin\Debug\Newtonsoft.Json.xml
+C:\Users\User\Documents\4TO CICLO\POO 2\PROYECTOS\EcommerceVentas\Capa_Negocio\obj\Debug\Capa_Negocio.csproj.AssemblyReference.cache
+C:\Users\User\Documents\4TO CICLO\POO 2\PROYECTOS\EcommerceVentas\Capa_Negocio\obj\Debug\Capa_Negocio.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\4TO CICLO\POO 2\PROYECTOS\EcommerceVentas\Capa_Negocio\obj\Debug\Capa_Neg.64FC8661.Up2Date
+C:\Users\User\Documents\4TO CICLO\POO 2\PROYECTOS\EcommerceVentas\Capa_Negocio\obj\Debug\Capa_Negocio.dll
+C:\Users\User\Documents\4TO CICLO\POO 2\PROYECTOS\EcommerceVentas\Capa_Negocio\obj\Debug\Capa_Negocio.pdb

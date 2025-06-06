@@ -1,0 +1,11 @@
+C:\Users\User\Documents\4TO CICLO\POO 2\PROYECTOS\EcommerceVentas\Capa_Datos\bin\Debug\Capa_Datos.dll
+C:\Users\User\Documents\4TO CICLO\POO 2\PROYECTOS\EcommerceVentas\Capa_Datos\bin\Debug\Capa_Datos.pdb
+C:\Users\User\Documents\4TO CICLO\POO 2\PROYECTOS\EcommerceVentas\Capa_Datos\bin\Debug\Capa_Entidad.dll
+C:\Users\User\Documents\4TO CICLO\POO 2\PROYECTOS\EcommerceVentas\Capa_Datos\bin\Debug\Newtonsoft.Json.dll
+C:\Users\User\Documents\4TO CICLO\POO 2\PROYECTOS\EcommerceVentas\Capa_Datos\bin\Debug\Capa_Entidad.pdb
+C:\Users\User\Documents\4TO CICLO\POO 2\PROYECTOS\EcommerceVentas\Capa_Datos\bin\Debug\Newtonsoft.Json.xml
+C:\Users\User\Documents\4TO CICLO\POO 2\PROYECTOS\EcommerceVentas\Capa_Datos\obj\Debug\Capa_Datos.csproj.AssemblyReference.cache
+C:\Users\User\Documents\4TO CICLO\POO 2\PROYECTOS\EcommerceVentas\Capa_Datos\obj\Debug\Capa_Datos.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\4TO CICLO\POO 2\PROYECTOS\EcommerceVentas\Capa_Datos\obj\Debug\Capa_Datos.csproj.Up2Date
+C:\Users\User\Documents\4TO CICLO\POO 2\PROYECTOS\EcommerceVentas\Capa_Datos\obj\Debug\Capa_Datos.dll
+C:\Users\User\Documents\4TO CICLO\POO 2\PROYECTOS\EcommerceVentas\Capa_Datos\obj\Debug\Capa_Datos.pdb

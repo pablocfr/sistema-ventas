@@ -1,0 +1,186 @@
+﻿@model IEnumerable<Capa_Entidad.Carrito>
+
+@{
+    ViewBag.Title = "PagarCarrito";
+}
+
+@{
+    ViewBag.Title = "Finalizar Compra";
+}
+
+
+
+<div class="card-finalizar-compra">
+    <h2>Finalizar Compra</h2>
+
+    <div class="info-finalizar">
+        <strong>🗓 Fecha:</strong> @DateTime.Now.ToString("dd/MM/yyyy")<br />
+        <strong>⏰ Hora:</strong> @DateTime.Now.ToString("HH:mm:ss")
+    </div>
+
+    @using (Html.BeginForm())
+    {
+        <div class="card shadow-sm mb-4">
+            <div class="card-body">
+                <div class="mb-3">
+                    <label for="codcli" class="form-label fw-bold">👤 Selecciona un cliente:</label>
+                    @Html.DropDownList("codcli", (SelectList)ViewBag.clientes, "Seleccionar", new { @class = "form-select" })
+                </div>
+
+                <div class="botones-finalizar">
+                    <button type="submit" class="btn btn-success shadow-sm">✅ Realizar Pago</button>
+                    @Html.ActionLink("⬅️ Seguir Comprando", "IndexArticulos", null, new { @class = "btn btn-warning shadow-sm" })
+                    @Html.ActionLink("🛒 Ver Carrito", "VerCarrito", null, new { @class = "btn btn-info shadow-sm text-white" })
+                </div>
+            </div>
+        </div>
+    }
+
+    @if (ViewBag.total != null)
+    {
+        <div class="alert alert-info text-center shadow-sm">
+            <h4 class="fw-bold">💰 Total a Pagar: <span class="text-primary">S/. @ViewBag.total</span></h4>
+        </div>
+    }
+
+    @if (Model != null && Model.Any())
+    {
+        <div class="card shadow border-0">
+            <div class="card-body p-0">
+                <table class="table table-hover table-striped align-middle m-0">
+                    <thead class="table-dark text-center">
+                        <tr>
+                            <th>📷 Foto</th>
+                            <th>@Html.DisplayNameFor(model => model.First().Codigo)</th>
+                            <th>@Html.DisplayNameFor(model => model.First().Nombre)</th>
+                            <th>@Html.DisplayNameFor(model => model.First().Precio)</th>
+                            <th>@Html.DisplayNameFor(model => model.First().Cantidad)</th>
+                            <th>@Html.DisplayNameFor(model => model.First().Total)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr class="text-center">
+                                <td>
+                                    <img src="@Url.Content("~/img-articulos/" + item.Codigo + ".jpg")"
+                                         alt="@item.Nombre"
+                                         class="img-finalizar" />
+                                </td>
+                                <td>@item.Codigo</td>
+                                <td>@item.Nombre</td>
+                                <td><span class="text-success fw-bold">S/. @item.Precio</span></td>
+                                <td>@item.Cantidad</td>
+                                <td><strong>S/. @item.Total</strong></td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    }
+    else
+    {
+        <div class="alert alert-secondary text-center mt-4">
+            <strong>No hay artículos en el carrito.</strong>
+        </div>
+    }
+</div>
+
+<style>
+    body {
+        background-color: #f0f2f5;
+    }
+
+    .card-finalizar-compra {
+        background: #ffffff;
+        border-radius: 16px;
+        padding: 30px;
+        margin: 40px auto;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        max-width: 900px;
+        transition: all 0.3s ease;
+    }
+
+        .card-finalizar-compra:hover {
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+
+        .card-finalizar-compra h2 {
+            font-size: 26px;
+            color: #1976d2;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 12px;
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+        }
+
+            .card-finalizar-compra h2::before {
+                content: '💳';
+                margin-right: 10px;
+            }
+
+    .info-finalizar {
+        font-size: 17px;
+        margin-bottom: 10px;
+        color: #555;
+    }
+
+    .table-finalizar {
+        margin-top: 20px;
+        background-color: white;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+        .table-finalizar th, .table-finalizar td {
+            text-align: center;
+            padding: 14px;
+            border-bottom: 1px solid #e0e0e0;
+            vertical-align: middle;
+        }
+
+        .table-finalizar th {
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        .table-finalizar tbody tr:hover {
+            background-color: #f9f9f9;
+        }
+
+    .img-finalizar {
+        width: 70px;
+        height: 70px;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+
+    .total-final {
+        text-align: right;
+        margin-top: 25px;
+        font-size: 22px;
+        font-weight: bold;
+        color: #1b5e20;
+        background: #e8f5e9;
+        padding: 18px 22px;
+        border-radius: 14px;
+        max-width: 350px;
+        float: right;
+        border-left: 6px solid #4caf50;
+    }
+
+    .botones-finalizar {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .clearfix {
+        clear: both;
+    }
+</style>
+

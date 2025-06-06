@@ -1,0 +1,149 @@
+﻿@model IEnumerable<Capa_Entidad.Articulo>
+
+@{
+    ViewBag.Title = "Catálogo de Artículos";
+}
+
+@if (TempData["mensaje"] != null)
+{
+    <div class="alert alert-danger alert-dismissible fade show mt-3 text-center" role="alert">
+        <strong>@TempData["mensaje"]</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Cerrar"></button>
+    </div>
+}
+
+<div class="container py-4">
+    <h2 class="text-center mb-4 text-primary">🛍️ Catálogo de Artículos</h2>
+
+    @using (Html.BeginForm())
+    {
+        <div class="row align-items-center mb-4">
+            <div class="col-md-6">
+                <div class="input-group">
+                    @Html.TextBox("nombre", "", new { @class = "form-control", @placeholder = "🔍 Buscar artículo por nombre..." })
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </div>
+            </div>
+
+            <div class="col-md-6 text-md-end mt-3 mt-md-0">
+                <div class="alert alert-info d-inline-block px-4 py-2 mb-0 shadow-sm">
+                    <strong>📦 @Model.Count() artículo(s) encontrado(s)</strong>
+                </div>
+            </div>
+        </div>
+    }
+
+    <div class="d-flex justify-content-end mb-3">
+        @Html.ActionLink("🛒 Ver Carrito", "VerCarrito", null, new { @class = "btn btn-success shadow-sm" })
+    </div>
+
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        @foreach (var item in Model)
+        {
+            <div class="col">
+                <div class="card h-100 shadow-sm border-light">
+                    <img src="@Url.Content("~/img-articulos/" + item.cod_art + ".jpg")"
+                         class="card-img-top p-2"
+                         alt="@item.nom_art"
+                         style="height: 150px; object-fit: contain;" />
+                    <div class="card-body p-2">
+                        <h6 class="card-title text-primary text-center mb-2">
+                            🧾 @item.nom_art
+                        </h6>
+                        <p class="mb-1 small">🔢 <strong>Código:</strong> @item.cod_art</p>
+                        <p class="mb-1 small">📦 <strong>Unidad:</strong> @item.uni_med</p>
+                        <p class="mb-1 small">💵 <strong>Precio:</strong> S/. @item.pre_art.ToString("F2")</p>
+                        <p class="mb-1 small">📦 <strong>Stock:</strong> @item.stk_art</p>
+
+                        <div class="d-grid mt-2">
+                            @Html.ActionLink("➕ Agregar", "AgregarArticulo", new { id = item.cod_art }, new { @class = "btn btn-sm btn-outline-danger" })
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+
+
+<!-- Agregar CSS al final o en el archivo de estilos -->
+<style>
+    /* Efecto de hover para las tarjetas */
+    .card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+        .card:hover {
+            transform: scale(1.02); /* Aumenta el tamaño de la tarjeta */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Añade sombra al hacer hover */
+        }
+</style>
+
+
+@*<h2>IndexArticulos</h2>
+
+    @using (Html.BeginForm())
+    {
+    <div>
+        <em>Nombre del Articulo: </em> @Html.TextBox("nombre", "", new { @class = "form-control mb-1" })
+        <button class="btn btn-success mb-1">Consultar</button>
+    </div>
+    }
+
+    <div class="alert alert-warning">
+        <h4><strong>Se encontraron: @Model.Count() articulos(s)</strong></h4>
+    </div>
+
+    <p>
+        @Html.ActionLink("Ver Carrito", "VerCarrito", null, new {@class = "btn btn-primary"})
+    </p>
+    <table class="table">
+        <tr class="table table-dark">
+            <th>
+                @Html.DisplayNameFor(model => model.cod_art)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.nom_art)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.uni_med)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.pre_art)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.stk_art)
+            </th>
+            <th>Foto</th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.cod_art)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.nom_art)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.uni_med)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.pre_art)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.stk_art)
+                </td>
+                <td>
+                    <img src="@Url.Content("/img-articulos/"+item.cod_art+".jpg")" alt="" style="width: 80px; height:80px; border-radius: 10px"/>
+                </td>
+                <td>
+                    @Html.ActionLink("Agregar", "AgregarArticulo", new { id=item.cod_art }, new {@class = "btn btn-warning"})
+                </td>
+            </tr>
+        }
+
+    </table>*@
