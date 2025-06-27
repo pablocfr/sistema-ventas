@@ -1,0 +1,82 @@
+﻿@model Capa_Entidad.Cliente
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Cliente</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.cod_cli)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cod_cli)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.nom_cli)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nom_cli)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tel_cli)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tel_cli)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.cor_cli)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cor_cli)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.cred_cli)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cred_cli)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.dir_cli)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dir_cli)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.cod_dist)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cod_dist)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fec_nac)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fec_nac)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

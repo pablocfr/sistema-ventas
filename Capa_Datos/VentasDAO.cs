@@ -67,6 +67,31 @@ namespace Capa_Datos
             
         }
 
+        public int TotalesVentas()
+        {
+            DataTable dt = DBHelper.RetornaDataTable("LISTAR_VENTAS_CC");
+
+            if (dt.Rows.Count > 0)
+            {
+                return Convert.ToInt32(dt.Rows[0][0]);
+            }
+
+            return 0; // Retorna 0 si no hay datos
+        }
+
+        public double MontoTotalVentas()
+        {
+            DataTable dt = DBHelper.RetornaDataTable("MONTO_TOTAL_VENTAS");
+
+            if (dt.Rows.Count > 0)
+            {
+                return Convert.ToDouble(dt.Rows[0][0]);
+            }
+
+            return 0.0;
+        }
+
+
         public List<Detalle> ListarDetalleVenta(string detalle)
         {
             var lista = new List<Detalle>();

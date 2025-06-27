@@ -45,5 +45,16 @@ namespace Capa_Negocio
         {
             return dao.RetornarUltimaVenta();
         }
+
+        public int TotalesVentas()
+        {
+            return dao.TotalesVentas();
+        }
+
+        public double MontoTotalVentas()
+        {
+            return dao.MontoTotalVentas();
+        }
+
     }// end class
 }// end namespace

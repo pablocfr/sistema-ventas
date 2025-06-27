@@ -1,0 +1,130 @@
+USE BDVENTAS2025
+GO
+
+CREATE OR ALTER PROC PA_CLIENTES_CC
+AS
+SELECT C.cod_cli, C.nom_cli, C.tel_cli, C.cor_cli, C.dir_cli,
+       C.cred_cli, C.fec_nac, C.cod_dist
+FROM Clientes C
+	WHERE C.eli_cli = 'No'
+GO
+
+--exec PA_CLIENTES_CC
+--go
+
+CREATE OR ALTER PROC PA_ARTICULOS_CC
+@NOMBRE VARCHAR(10) = '%'
+AS
+SELECT A.cod_art, nom_art, uni_med, A.pre_art, A.stk_art
+FROM Articulos A
+	WHERE nom_art LIKE @NOMBRE + '%' AND A.stk_art>0
+GO
+
+EXEC PA_ARTICULOS_CC 'M'
+GO
+
+---- FUNCION PARA GENERAR NUEVO NUMERO DE VENTA
+CREATE OR ALTER FUNCTION FN_NUM_VTA()
+RETURNS VARCHAR(5)
+AS
+BEGIN
+	-- DECLARANDO VARIABLE PARA EL NUEVO NUMERO DE LA VENTA
+	DECLARE @NUMERO VARCHAR(5) 
+	-- RECUPERANDO EL MAXIMO NUMERO DE VENTA
+	SELECT @NUMERO=RIGHT(MAX(NUM_VTA),4)+1 FROM Ventas_Cab
+	-- GENERANDO EL NUEVO NUMERO DE LA VENTA
+	SELECT @NUMERO='V'+RIGHT('000'+@NUMERO,4)
+	--
+	RETURN @NUMERO
+END
+GO
+
+SELECT DBO.FN_NUM_VTA() AS NUEVO_NRO_VENTA
+GO
+
+CREATE OR ALTER PROC PA_GRABAR_VENTAS_CAB_CC
+@COD_CLI CHAR(5),@TOT_VTA DECIMAL(10,2)
+AS
+	DECLARE @NUM VARCHAR(5) = DBO.FN_NUM_VTA() -- LLAMAMOS A LA FUNCIÓN
+	-----------------------------------------------
+	-- INSERTANDO LOS DATOS DE LA NUEVA VENTA
+	INSERT INTO Ventas_Cab VALUES(@NUM,GETDATE(),
+	@COD_CLI, 99, @TOT_VTA, 'No')
+	-- DEVOLVIENDO EL NUEVO NUMERO DE VENTA GENERADO
+	SELECT @NUM AS NUMERO
+GO
+
+CREATE OR ALTER PROC PA_GRABAR_VENTAS_DETA_CC
+@NUM_VTA CHAR(5), @COD_ART CHAR(5), 
+@CANTIDAD INT, @PRECIO DECIMAL(7,2)
+AS
+	-- INSERTANDO EL NUEVO DETALLE DE LA VENTA
+	INSERT INTO Ventas_Deta 
+	   VALUES(@NUM_VTA, @COD_ART, @CANTIDAD, @PRECIO, 'No')
+
+	-- ACTUALIZANDO EL STOCK DEL ARTICULO
+	UPDATE Articulos SET stk_art=stk_art - @CANTIDAD 
+	WHERE cod_art = @COD_ART
+GO
+
+--
+CREATE OR ALTER PROCEDURE PA_LISTAR_DETALLE
+@CODIGO VARCHAR(10)
+AS
+SELECT 
+		VD.num_vta,
+		C.nom_cli,
+		A.nom_art,
+		A.pre_art,
+		VD.cantidad,
+		VC.tot_vta
+FROM 
+	Ventas_Deta AS VD 
+	JOIN Ventas_Cab AS VC
+	ON VD.num_vta = VC.num_vta
+	JOIN Articulos AS A
+	ON VD.cod_art = A.cod_art
+	JOIN Clientes AS C
+	ON VC.cod_cli = C.cod_cli
+WHERE VD.num_vta = @CODIGO
+GO
+
+SELECT * FROM Ventas_Cab
+SELECT * FROM Ventas_Deta
+
+EXEC PA_LISTAR_DETALLE 'V0113'
+GO
+
+CREATE OR ALTER PROCEDURE PA_OBTENER_ULTIMA_VENTA
+AS
+BEGIN
+    SELECT TOP 1 *
+    FROM Ventas_Cab
+    ORDER BY num_vta DESC;
+END
+GO
+--------------------------------
+-- ULTIMA VENTA REGISTRADA
+--------------------------------
+SELECT TOP(1) VC.*, C.nom_cli 
+   FROM Ventas_Cab VC INNER JOIN CLIENTES C
+   ON VC.cod_cli=C.cod_cli
+   ORDER BY VC.num_vta DESC
+GO
+
+SELECT TOP(1) WITH TIES VD.*, A.nom_art
+FROM Ventas_Deta VD INNER JOIN Articulos A
+	ON VD.cod_art=A.cod_art
+	ORDER BY VD.num_vta DESC
+GO
+
+SELECT * FROM Articulos ORDER BY stk_art ASC
+GO
+-- A0028, A0030, A0031, A0033
+-- 10
+
+-- constraint de tipo check sobre la columna art_stk 
+-- de la tabla Articulos que no permita tener un stock negativo
+ALTER TABLE ARTICULOS
+   ADD CONSTRAINT CK_STK_ART CHECK(STK_ART>=0)
+GO

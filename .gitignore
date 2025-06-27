@@ -88,3 +88,49 @@ nb-configuration.xml
 ## Miscellaneous
 ##############################
 *.log
+
+##############################
+## Visual Studio (.NET / ASP.NET MVC)
+##############################
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.dbmdl
+*.cache
+*.pdb
+*.bak
+
+# Build results
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+*.log
+
+# NuGet
+*.nupkg
+packages/
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Publish folders
+app.publish/
+*.Publish.xml
+
+# Entity Framework
+migrations/
+
+# IIS Express
+.vsconfig
+iisexpress/
+*.iissettings.json
+
+# Web config transforms
+web.*.config
+
+# Rider IDE
+.idea/
+*.sln.iml
+
