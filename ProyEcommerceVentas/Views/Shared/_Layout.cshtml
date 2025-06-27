@@ -59,8 +59,8 @@
                     @Html.Raw($"<li class='nav-item'><a class='nav-link {(ViewContext.RouteData.Values["controller"]?.ToString() == "Productos" ? "active" : "")}' href='{Url.Action("Index", "Articulo")}'><i class='bi bi-box'></i> Productos</a></li>")
                     @Html.Raw($"<li class='nav-item'><a class='nav-link {(ViewContext.RouteData.Values["controller"]?.ToString() == "Ver Carrito" ? "active" : "")}' href='{Url.Action("VerCarrito", "Ventas")}'><i class='bi bi-cart3'></i> Ver Carrito</a></li>")
                     @Html.Raw($"<li class='nav-item'><a class='nav-link {(ViewContext.RouteData.Values["controller"]?.ToString() == "Ventas" ? "active" : "")}' href='{Url.Action("IndexArticulos", "Ventas")}'><i class='bi bi-credit-card'></i> Vender Producto</a></li>")
-                    @*@Html.Raw($"<li class='nav-item'><a class='nav-link {(ViewContext.RouteData.Values["controller"]?.ToString() == "Reportes" ? "active" : "")}' href='{Url.Action("Index", "Reportes")}'><i class='bi bi-graph-up'></i> Reportes</a></li>")*@
-                    @Html.Raw($"<li class='nav-item'><a class='nav-link {(ViewContext.RouteData.Values["controller"]?.ToString() == "Usuarios" ? "active" : "")}' href='{Url.Action("Index", "Usuarios")}'><i class='bi bi-person-gear'></i> Usuarios</a></li>")
+                    @*@Html.Raw($"<li class='nav-item'><a class='nav-link {(ViewContext.RouteData.Values["controller"]?.ToString() == "Reportes" ? "active" : "")}' href='{Url.Action("Index", "Reportes")}'><i class='bi bi-graph-up'></i> Reportes</a></li>")
+        @Html.Raw($"<li class='nav-item'><a class='nav-link {(ViewContext.RouteData.Values["controller"]?.ToString() == "Usuarios" ? "active" : "")}' href='{Url.Action("Index", "Usuarios")}'><i class='bi bi-person-gear'></i> Usuarios</a></li>")*@
                 </ul>
                 <div class="dropdown">
                     <a class="btn btn-light dropdown-toggle d-flex align-items-center gap-2" href="#" role="button" id="dropdownUsuario" data-bs-toggle="dropdown" aria-expanded="false">
