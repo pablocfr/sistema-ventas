@@ -9,9 +9,10 @@
     string numVenta = venta?.num_vta;
     string cliente = venta?.nom_cli;
     decimal total = venta?.tot_vta ?? 0;
+    var venta2 = ViewBag.Venta as Capa_Entidad.VENTAS_AGRUPADAS;
 }
 
-@Html.ActionLink("⬅️ Seguir Comprando", "IndexArticulos", null, new { @class = "btn btn-success shadow-sm" })
+@Html.ActionLink("⬅️ Ver Ventas", "ListarVentas", null, new { @class = "btn btn-success shadow-sm" })
 
 <div class="card-factura">
     <h2>Resumen de Venta</h2>

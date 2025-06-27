@@ -56,5 +56,10 @@ namespace Capa_Negocio
             return dao.MontoTotalVentas();
         }
 
+        public List<VENTAS_AGRUPADAS> ListaVentas()
+        {
+            return dao.ListaVentas();
+        }
+
     }// end class
 }// end namespace

@@ -8,10 +8,12 @@ using Capa_Entidad;
 using Capa_Negocio;
 using Newtonsoft.Json;
 
-using System.Transactions; //agregado para usar transacciones
+using System.Transactions;
+using TuProyectoWeb.Filtros; //agregado para usar transacciones
 
 namespace ProyEcommerceVentas.Controllers
 {
+    [FiltroSesion]
     public class VentasController : Controller
     {
         VentasNegocio ventasNegocio = new VentasNegocio();
@@ -35,6 +37,9 @@ namespace ProyEcommerceVentas.Controllers
         // GET: Ventas
         public ActionResult IndexArticulos(string nombre = "")
         {
+            ViewBag.Usuario = Session["usuario"];
+            ViewBag.Rol = Session["rol"];
+
             if (Session["carrito"] == null)
             {
                 GrabarCarrito();
@@ -176,14 +181,31 @@ namespace ProyEcommerceVentas.Controllers
             return View(listaCarrito);
         }
 
-        public ActionResult ListarDetalleVenta()
+        VENTAS_AGRUPADAS BuscarVenta(string num_vta)
         {
-            var ultimaVenta = ventasNegocio.RetornarUltimaVenta();
-
-            var detalle = ventasNegocio.ListarDetalleVenta(ultimaVenta);
-
-            return View(detalle);
+            VENTAS_AGRUPADAS buscado = ventasNegocio.ListaVentas().Find(x => x.num_vta.Equals(num_vta));
+            return buscado;
         }
+
+        public ActionResult ListarVentas() 
+        {
+            return View(ventasNegocio.ListaVentas());
+        }
+
+        public ActionResult ListarDetalleVenta(string id = null)
+        {
+            string numeroVenta = string.IsNullOrEmpty(id)
+                ? ventasNegocio.RetornarUltimaVenta()
+                : id;
+
+            var venta = BuscarVenta(numeroVenta); // ejemplo: devuelve un objeto Venta
+            var detalle = ventasNegocio.ListarDetalleVenta(numeroVenta); // List<DetalleVenta>
+
+            ViewBag.Venta = venta;
+
+            return View(detalle); // Solo se envía el detalle como modelo
+        }
+
 
     }
 }

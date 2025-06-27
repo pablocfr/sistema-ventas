@@ -118,5 +118,18 @@ namespace Capa_Datos
                 throw new Exception(ex.Message);
             }
         }
+
+        public List<VENTAS_AGRUPADAS> ListaVentas()
+        {
+            var lista = new List<VENTAS_AGRUPADAS>();
+
+            DataTable dt = DBHelper.RetornaDataTable("PA_VENTAS_AGRUPADAS");
+
+            string cad_jsonb = JsonConvert.SerializeObject(dt);
+
+            lista = JsonConvert.DeserializeObject<List<VENTAS_AGRUPADAS>>(cad_jsonb);
+
+            return lista;
+        }
     }
 }
