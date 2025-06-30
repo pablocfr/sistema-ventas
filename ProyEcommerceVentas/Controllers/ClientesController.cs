@@ -50,24 +50,27 @@ namespace ProyEcommerceVentas.Controllers
 
         // POST: Clientes/Create
         [HttpPost]
-        public ActionResult CreateCliente(Cliente obj)
+        public ActionResult CreateClientes(Cliente obj)
         {
             try
             {
-                if (ModelState.IsValid) 
+                if (ModelState.IsValid)
                 {
                     TempData["mensaje"] = clientesNegocio.GrabarCliente(obj);
                     return RedirectToAction("Index");
-                }  
+                }
             }
-            catch(Exception ex) 
+            catch (Exception ex)
             {
                 ViewBag.mensaje = ex.Message;
             }
 
             ViewBag.distritos = new SelectList(clientesNegocio.ListarDistritos(), "cod_dist", "nom_dist");
-            return View(obj);
+            var listaClientes = clientesNegocio.ListarClientes();
+
+            return View("Index", listaClientes);
         }
+
 
         // GET: Clientes/Edit/5
         public ActionResult EditCliente(string id)

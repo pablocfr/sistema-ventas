@@ -3,16 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\User\\Documents\\4TO CICLO\\POO 2\\PROYECTOS\\EcommerceVentas\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CFB6D9D5-E754-4B2E-A7E4-C5476D3C8AFE}|ProyEcommerceVentas\\ProyEcommerceVentas.csproj|c:\\users\\user\\documents\\4to ciclo\\poo 2\\proyectos\\ecommerceventas\\proyecommerceventas\\views\\ventas\\listarventas.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CFB6D9D5-E754-4B2E-A7E4-C5476D3C8AFE}|ProyEcommerceVentas\\ProyEcommerceVentas.csproj|solutionrelative:proyecommerceventas\\views\\ventas\\listarventas.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{CFB6D9D5-E754-4B2E-A7E4-C5476D3C8AFE}|ProyEcommerceVentas\\ProyEcommerceVentas.csproj|C:\\Users\\User\\Documents\\4TO CICLO\\POO 2\\PROYECTOS\\EcommerceVentas\\proyecommerceventas\\views\\clientes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CFB6D9D5-E754-4B2E-A7E4-C5476D3C8AFE}|ProyEcommerceVentas\\ProyEcommerceVentas.csproj|solutionrelative:proyecommerceventas\\views\\clientes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CFB6D9D5-E754-4B2E-A7E4-C5476D3C8AFE}|ProyEcommerceVentas\\ProyEcommerceVentas.csproj|c:\\users\\user\\documents\\4to ciclo\\poo 2\\proyectos\\ecommerceventas\\proyecommerceventas\\views\\articulo\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CFB6D9D5-E754-4B2E-A7E4-C5476D3C8AFE}|ProyEcommerceVentas\\ProyEcommerceVentas.csproj|solutionrelative:proyecommerceventas\\views\\articulo\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{CFB6D9D5-E754-4B2E-A7E4-C5476D3C8AFE}|ProyEcommerceVentas\\ProyEcommerceVentas.csproj|C:\\Users\\User\\Documents\\4TO CICLO\\POO 2\\PROYECTOS\\EcommerceVentas\\proyecommerceventas\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CFB6D9D5-E754-4B2E-A7E4-C5476D3C8AFE}|ProyEcommerceVentas\\ProyEcommerceVentas.csproj|solutionrelative:proyecommerceventas\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CFB6D9D5-E754-4B2E-A7E4-C5476D3C8AFE}|ProyEcommerceVentas\\ProyEcommerceVentas.csproj|c:\\users\\user\\documents\\4to ciclo\\poo 2\\proyectos\\ecommerceventas\\proyecommerceventas\\views\\ventas\\indexarticulos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CFB6D9D5-E754-4B2E-A7E4-C5476D3C8AFE}|ProyEcommerceVentas\\ProyEcommerceVentas.csproj|solutionrelative:proyecommerceventas\\views\\ventas\\indexarticulos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{CFB6D9D5-E754-4B2E-A7E4-C5476D3C8AFE}|ProyEcommerceVentas\\ProyEcommerceVentas.csproj|C:\\Users\\User\\Documents\\4TO CICLO\\POO 2\\PROYECTOS\\EcommerceVentas\\proyecommerceventas\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CFB6D9D5-E754-4B2E-A7E4-C5476D3C8AFE}|ProyEcommerceVentas\\ProyEcommerceVentas.csproj|solutionrelative:proyecommerceventas\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CFB6D9D5-E754-4B2E-A7E4-C5476D3C8AFE}|ProyEcommerceVentas\\ProyEcommerceVentas.csproj|C:\\Users\\User\\Documents\\4TO CICLO\\POO 2\\PROYECTOS\\EcommerceVentas\\proyecommerceventas\\controllers\\articulocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CFB6D9D5-E754-4B2E-A7E4-C5476D3C8AFE}|ProyEcommerceVentas\\ProyEcommerceVentas.csproj|solutionrelative:proyecommerceventas\\controllers\\articulocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CFB6D9D5-E754-4B2E-A7E4-C5476D3C8AFE}|ProyEcommerceVentas\\ProyEcommerceVentas.csproj|C:\\Users\\User\\Documents\\4TO CICLO\\POO 2\\PROYECTOS\\EcommerceVentas\\proyecommerceventas\\filtros\\filtrosesionattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CFB6D9D5-E754-4B2E-A7E4-C5476D3C8AFE}|ProyEcommerceVentas\\ProyEcommerceVentas.csproj|solutionrelative:proyecommerceventas\\filtros\\filtrosesionattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C5C00E0-C0D9-48B9-B757-12FCE7B3DC85}|Capa_Negocio\\Capa_Negocio.csproj|C:\\Users\\User\\Documents\\4TO CICLO\\POO 2\\PROYECTOS\\EcommerceVentas\\capa_negocio\\clientesnegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C5C00E0-C0D9-48B9-B757-12FCE7B3DC85}|Capa_Negocio\\Capa_Negocio.csproj|solutionrelative:capa_negocio\\clientesnegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C5C00E0-C0D9-48B9-B757-12FCE7B3DC85}|Capa_Negocio\\Capa_Negocio.csproj|C:\\Users\\User\\Documents\\4TO CICLO\\POO 2\\PROYECTOS\\EcommerceVentas\\capa_negocio\\articulonegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C5C00E0-C0D9-48B9-B757-12FCE7B3DC85}|Capa_Negocio\\Capa_Negocio.csproj|solutionrelative:capa_negocio\\articulonegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,46 +38,93 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ListarVentas.cshtml",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\4TO CICLO\\POO 2\\PROYECTOS\\EcommerceVentas\\ProyEcommerceVentas\\Views\\Ventas\\ListarVentas.cshtml",
-              "RelativeDocumentMoniker": "ProyEcommerceVentas\\Views\\Ventas\\ListarVentas.cshtml",
-              "ToolTip": "C:\\Users\\User\\Documents\\4TO CICLO\\POO 2\\PROYECTOS\\EcommerceVentas\\ProyEcommerceVentas\\Views\\Ventas\\ListarVentas.cshtml",
-              "RelativeToolTip": "ProyEcommerceVentas\\Views\\Ventas\\ListarVentas.cshtml",
-              "ViewState": "AgIAABgAAAAAAAAAAADwvy0AAAAUAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\4TO CICLO\\POO 2\\PROYECTOS\\EcommerceVentas\\ProyEcommerceVentas\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "ProyEcommerceVentas\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\User\\Documents\\4TO CICLO\\POO 2\\PROYECTOS\\EcommerceVentas\\ProyEcommerceVentas\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "ProyEcommerceVentas\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-27T18:13:14.88Z",
+              "WhenOpened": "2025-06-30T01:28:30.032Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\4TO CICLO\\POO 2\\PROYECTOS\\EcommerceVentas\\ProyEcommerceVentas\\Views\\Articulo\\Index.cshtml",
-              "RelativeDocumentMoniker": "ProyEcommerceVentas\\Views\\Articulo\\Index.cshtml",
-              "ToolTip": "C:\\Users\\User\\Documents\\4TO CICLO\\POO 2\\PROYECTOS\\EcommerceVentas\\ProyEcommerceVentas\\Views\\Articulo\\Index.cshtml",
-              "RelativeToolTip": "ProyEcommerceVentas\\Views\\Articulo\\Index.cshtml",
-              "ViewState": "AgIAAJAAAAAAAAAAAAAAAJQAAAAAAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\4TO CICLO\\POO 2\\PROYECTOS\\EcommerceVentas\\ProyEcommerceVentas\\Views\\Clientes\\Index.cshtml",
+              "RelativeDocumentMoniker": "ProyEcommerceVentas\\Views\\Clientes\\Index.cshtml",
+              "ToolTip": "C:\\Users\\User\\Documents\\4TO CICLO\\POO 2\\PROYECTOS\\EcommerceVentas\\ProyEcommerceVentas\\Views\\Clientes\\Index.cshtml",
+              "RelativeToolTip": "ProyEcommerceVentas\\Views\\Clientes\\Index.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-27T18:13:06.448Z",
+              "WhenOpened": "2025-06-30T01:28:09.914Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ArticuloController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\4TO CICLO\\POO 2\\PROYECTOS\\EcommerceVentas\\ProyEcommerceVentas\\Controllers\\ArticuloController.cs",
+              "RelativeDocumentMoniker": "ProyEcommerceVentas\\Controllers\\ArticuloController.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\4TO CICLO\\POO 2\\PROYECTOS\\EcommerceVentas\\ProyEcommerceVentas\\Controllers\\ArticuloController.cs",
+              "RelativeToolTip": "ProyEcommerceVentas\\Controllers\\ArticuloController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABUAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-30T01:27:55.195Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FiltroSesionAttribute.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\4TO CICLO\\POO 2\\PROYECTOS\\EcommerceVentas\\ProyEcommerceVentas\\Filtros\\FiltroSesionAttribute.cs",
+              "RelativeDocumentMoniker": "ProyEcommerceVentas\\Filtros\\FiltroSesionAttribute.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\4TO CICLO\\POO 2\\PROYECTOS\\EcommerceVentas\\ProyEcommerceVentas\\Filtros\\FiltroSesionAttribute.cs",
+              "RelativeToolTip": "ProyEcommerceVentas\\Filtros\\FiltroSesionAttribute.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-30T01:27:49.945Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ClientesNegocio.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\4TO CICLO\\POO 2\\PROYECTOS\\EcommerceVentas\\Capa_Negocio\\ClientesNegocio.cs",
+              "RelativeDocumentMoniker": "Capa_Negocio\\ClientesNegocio.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\4TO CICLO\\POO 2\\PROYECTOS\\EcommerceVentas\\Capa_Negocio\\ClientesNegocio.cs",
+              "RelativeToolTip": "Capa_Negocio\\ClientesNegocio.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-30T01:27:27.389Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ArticuloNegocio.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\4TO CICLO\\POO 2\\PROYECTOS\\EcommerceVentas\\Capa_Negocio\\ArticuloNegocio.cs",
+              "RelativeDocumentMoniker": "Capa_Negocio\\ArticuloNegocio.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\4TO CICLO\\POO 2\\PROYECTOS\\EcommerceVentas\\Capa_Negocio\\ArticuloNegocio.cs",
+              "RelativeToolTip": "Capa_Negocio\\ArticuloNegocio.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-30T01:27:23.999Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "IndexArticulos.cshtml",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\4TO CICLO\\POO 2\\PROYECTOS\\EcommerceVentas\\ProyEcommerceVentas\\Views\\Ventas\\IndexArticulos.cshtml",
-              "RelativeDocumentMoniker": "ProyEcommerceVentas\\Views\\Ventas\\IndexArticulos.cshtml",
-              "ToolTip": "C:\\Users\\User\\Documents\\4TO CICLO\\POO 2\\PROYECTOS\\EcommerceVentas\\ProyEcommerceVentas\\Views\\Ventas\\IndexArticulos.cshtml",
-              "RelativeToolTip": "ProyEcommerceVentas\\Views\\Ventas\\IndexArticulos.cshtml",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\4TO CICLO\\POO 2\\PROYECTOS\\EcommerceVentas\\ProyEcommerceVentas\\Views\\Login\\Index.cshtml",
+              "RelativeDocumentMoniker": "ProyEcommerceVentas\\Views\\Login\\Index.cshtml",
+              "ToolTip": "C:\\Users\\User\\Documents\\4TO CICLO\\POO 2\\PROYECTOS\\EcommerceVentas\\ProyEcommerceVentas\\Views\\Login\\Index.cshtml",
+              "RelativeToolTip": "ProyEcommerceVentas\\Views\\Login\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-27T18:12:44.871Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-30T00:59:19.921Z"
             }
           ]
         }
